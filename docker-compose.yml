@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  system_monitoring_frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: monitoring-frontend
+    ports:
+      - 8010:80
+    restart: unless-stopped
